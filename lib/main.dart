@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'create_quote_page.dart';
 import 'home_page.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MainNavigation extends StatefulWidget {
 
 class _MainNavigationState extends State<MainNavigation> {
   int _selectedIndex = 0;
-  final List<Widget> _pages = const [HomePage()];
+  final List<Widget> _pages = const [HomePage(), CreateQuotePage()];
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
