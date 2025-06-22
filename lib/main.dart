@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quotora/explore_page.dart';
 import 'create_quote_page.dart';
 import 'home_page.dart';
+import 'saved_quotes.dart';
 
 void main() {
   runApp(const QuatoraApp());
@@ -37,6 +38,7 @@ class _MainNavigationState extends State<MainNavigation> {
     HomePage(),
     CreateQuotePage(),
     ExplorePage(),
+    SavedQuotesPage(),
   ];
   void _onItemTapped(int index) {
     setState(() {
