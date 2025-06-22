@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quotora/explore_page.dart';
 import 'create_quote_page.dart';
 import 'home_page.dart';
+import 'profile_page.dart';
 import 'saved_quotes.dart';
 
 void main() {
@@ -39,6 +40,7 @@ class _MainNavigationState extends State<MainNavigation> {
     CreateQuotePage(),
     ExplorePage(),
     SavedQuotesPage(),
+    ProfilePage(),
   ];
   void _onItemTapped(int index) {
     setState(() {

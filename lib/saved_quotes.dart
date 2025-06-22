@@ -15,11 +15,11 @@ class SavedQuotesPage extends StatelessWidget {
     ];
 
     final images = [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470", // mountain
+      "https://media.istockphoto.com/id/1341288649/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=612x612&w=0&k=20&c=0xb_bb-NBIxjiJL_kqY-o3dCjv2PmKFZfRjHcVEijDc=", // mountain
       "https://media.istockphoto.com/id/538449165/photo/beautiful-cloudscape-over-the-sea-sunset-shot.jpg?s=612x612&w=0&k=20&c=XwieRIV5Df3Azuk8tH3CnAlLA-GO5GBE7R7dKtb1POw=", // sunset
       "https://media.istockphoto.com/id/1446199740/photo/path-through-a-sunlit-forest.jpg?s=612x612&w=0&k=20&c=DuozAED7qfI5E6PcVb4bHtFJ_uM_n1duok56j_liLEA=", // forest
       "https://media.istockphoto.com/id/1212911887/photo/futuristic-digital-block-chain-background.jpg?s=612x612&w=0&k=20&c=tqxa6bZg8XBo_J6h2waJrBZ2UdTeEtzOlRUcM9sDkMc=", // abstract
-      "https://images.unsplash.com/photo-1494526585095-c41746248156", // city
+      "https://media.istockphoto.com/id/542727462/photo/houston-texas-skyline.jpg?s=612x612&w=0&k=20&c=ldhxhUFIIaST-o064dsyyzMSV76Eqt0fpjMJUWTP0Is=", // city
       "https://media.istockphoto.com/id/162515751/photo/moon-over-mountains.jpg?s=612x612&w=0&k=20&c=mKsWiAqN8lOGl6bdnDg9ssY25RSJJbSOk3g0MuDZNXw=", // night
     ];
 
@@ -51,7 +51,7 @@ class SavedQuotesPage extends StatelessWidget {
                   image: NetworkImage(images[index % images.length]),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
-                    Colors.black.withOpacity(0.45),
+                    Colors.black.withValues(alpha: 0.45),
                     BlendMode.darken,
                   ),
                 ),
